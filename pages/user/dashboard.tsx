@@ -4,6 +4,14 @@ import SearchBar from '../../components/SearchBar';
 import Link from 'next/link';
 import Head from 'next/head';
 
+export async function getStaticProps(ctx: any) {
+  return {
+    props: {
+      protected: true,
+    },
+  };
+}
+
 export default function UserDashboard() {
   const [services, setServices] = useState<string[]>();
   const [search, setSearch] = useState<string>();
