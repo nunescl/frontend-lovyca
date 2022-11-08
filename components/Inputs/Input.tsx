@@ -22,10 +22,7 @@ export default function Input({
   placeholder?: string;
 }) {
   return (
-    <div
-      className="grid text-gray-800
-    "
-    >
+    <div className="grid text-gray-800">
       <label htmlFor={name} className="ml-1">
         {label}
       </label>

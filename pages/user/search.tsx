@@ -2,6 +2,14 @@ import Link from 'next/link';
 import React from 'react';
 import SearchBar from '../../components/SearchBar';
 
+export async function getStaticProps(ctx: any) {
+  return {
+    props: {
+      protected: true,
+    },
+  };
+}
+
 export default function UserSearch() {
   return (
     <div className="h-screen flex justify-center mx-10">

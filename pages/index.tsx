@@ -1,10 +1,11 @@
 import Head from 'next/head';
+import { useAuth } from '../context/AuthContext';
 import Login from './login';
 import UserSearch from './user/search';
-import { useAuth } from '../context/AuthContext';
 
 export default function Home() {
   const { currentUser } = useAuth();
+  console.log(currentUser);
   return (
     <>
       <Head>

@@ -4,6 +4,14 @@ import React, { useState } from 'react';
 import Input from '../../components/Inputs/Input';
 import { api, SERV_POST } from '../api/api';
 
+export async function getStaticProps(ctx: any) {
+  return {
+    props: {
+      protected: true,
+    },
+  };
+}
+
 export default function CreateService() {
   const warranty: { id: number; value: number }[] = [
     { id: 1, value: 30 },

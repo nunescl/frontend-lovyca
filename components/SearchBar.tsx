@@ -7,7 +7,7 @@ export default function SearchBar({
 }: {
   placeholder?: string;
   search?: string;
-  onChange: any;
+  onChange?: any;
 }) {
   return (
     <div className="flex justify-bettween">
