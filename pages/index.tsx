@@ -5,7 +5,7 @@ import UserSearch from './user/search';
 
 export default function Home() {
   const { currentUser } = useAuth();
-  console.log(currentUser);
+  
   return (
     <>
       <Head>
